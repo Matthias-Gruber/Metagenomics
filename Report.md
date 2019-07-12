@@ -1,7 +1,7 @@
 # Metagenomik
 
-![Abundance] 
-(https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Abundance.png)
+<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Abundance.png" title="Abundance">
+<figcaption> Abundance </figcaption>
 
 # Abstract
 
