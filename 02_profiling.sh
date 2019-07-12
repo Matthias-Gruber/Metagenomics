@@ -27,6 +27,8 @@ ln -s data/ncbi_lc_R2.fastq read2.fq
 # and use it instead of the original data files to prevent unnecessary waiting times.
 # E.g., we can subsample to 100,000 reads (should be good enough to run quickly and
 # still produce meaningful results)
+conda activate omics
+
 seqtk sample -s 100 read1.fq 100000 > sub1.fq
 seqtk sample -s 100 read2.fq 100000 > sub2.fq
 # If a tool works and does the right thing, we should run it on the complete dataset
