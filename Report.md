@@ -1,10 +1,17 @@
 # Metagenomik
 
+![Abundance] 
+(https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Abundance.png)
+
 # Abstract
 
 # Introduction
 
 # Data generation
+
+```sh
+seqtk sample -s 100 read1.fq 100000 > sub1.fq
+```
 
 ## Introduction
 
