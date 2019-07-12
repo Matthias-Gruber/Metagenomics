@@ -22,7 +22,7 @@
 
 # Profiling of the community
 
-Introduction
+## Introduction
 
 ## Methods
 
