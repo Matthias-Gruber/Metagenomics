@@ -9,8 +9,10 @@
 
 # Data generation
 
+Mit dem folgenden Befehl wurden 2 000 000 MiSeq reads von 2 bakteriellen und 1 Archae Genom - von RefSeq zufällig ausgewählt - simuliert.
+
 ```sh
-seqtk sample -s 100 read1.fq 100000 > sub1.fq
+iss generate --ncbi bacteria archaea --n_genomes_ncbi 2 1 --n_reads 2000000 --model MiSeq --output ncbi_lc --cpus 8
 ```
 
 ## Introduction
