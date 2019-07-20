@@ -91,7 +91,32 @@ ktImportText -o $OUT.krona.html metaphlan_krona.out
 
 # Assembly
 
+## Introduction
+
+## Methods
+
+Das Metagenom wurde mit dem Megahit assembler durchgeführt.
+
+```sh
+megahit -1 read1.fq -2 read2.fq -o megahit_out
+```
+Das Assembly wurde mit Quast evaluiert.
+
+```sh
+quast -1 read1.fq -2 read2.fq $IN
+```
+
+## Results and discussion
+
+
 # Binning
+
+## Introduction
+
+## Methods
+
+
+## Results and discussion
 
 # References
 
