@@ -47,6 +47,24 @@ bbduk.sh in1=$IN in2=$IN2 out1=$IN.bbduk.fq out2=$IN2.bbduk.fq qtrim=r trimq=10 
 
 ## Methods
 
+Das Profiling basierend auf der  whole genome sequence erfolgte mit Krakenuniq.
+
+```sh
+krakenuniq --db $DBDIR --threads 10 --report-file kraken_taxonomy_profile.txt --paired read1.fq read2.fq  > kraken_read_classification.tsv
+```
+
+Das Profiling basierend auf den rRNA Genen erfolgte mit Metaxa.
+
+```sh
+metaxa2 -1 read1.fq -2 read2.fq -g ssu --mode metagenome --plus T --cpu 8 --megablast T -o $OUT
+```
+
+Die Darstellung erfolgte mit Krona.
+
+```sh
+ktImportTaxonomy $OUT.taxonomy.filtered.taxids.txt -o $OUT.taxonomy.filtered.krona.html -q 1 -t 2 -s 5
+```
+
 ## Results and discussion
 
 # Assembly
