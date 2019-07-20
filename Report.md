@@ -47,11 +47,15 @@ bbduk.sh in1=$IN in2=$IN2 out1=$IN.bbduk.fq out2=$IN2.bbduk.fq qtrim=r trimq=10 
 
 ## Methods
 
+### Krakenuniq
+
 Das Profiling basierend auf der  whole genome sequence erfolgte mit Krakenuniq.
 
 ```sh
 krakenuniq --db $DBDIR --threads 10 --report-file kraken_taxonomy_profile.txt --paired read1.fq read2.fq  > kraken_read_classification.tsv
 ```
+
+### Metaxa
 
 Das Profiling basierend auf den rRNA Genen erfolgte mit Metaxa.
 
@@ -59,10 +63,28 @@ Das Profiling basierend auf den rRNA Genen erfolgte mit Metaxa.
 metaxa2 -1 read1.fq -2 read2.fq -g ssu --mode metagenome --plus T --cpu 8 --megablast T -o $OUT
 ```
 
-Die Darstellung erfolgte mit Krona.
+###  Motus
+
+Das Profiling basierend auf universal single-copy marker genes erfolgte mit motus.
 
 ```sh
-ktImportTaxonomy $OUT.taxonomy.filtered.taxids.txt -o $OUT.taxonomy.filtered.krona.html -q 1 -t 2 -s 5
+motus profile -f read1.fq -r read2.fq -t 30 > $OUT
+```
+
+### Metaphlan
+
+Das Profiling basierend auf clade-specific marker genes erfolgte mit Metaphlan.
+
+```sh
+metaphlan2.py read1.fq,read2.fq --bowtie2out metagenome.bowtie2.bz2 --nproc 8 --input_type fastq > $OUT
+```
+
+### Krona
+
+Die Darstellung der Ergebnisse erfolgte mit Krona.
+
+```sh
+ktImportText -o $OUT.krona.html metaphlan_krona.out
 ```
 
 ## Results and discussion
