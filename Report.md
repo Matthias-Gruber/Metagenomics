@@ -5,39 +5,39 @@
 
 # Abstract
 
-# Introduction
+# 1. General Introduction
 
-# Data generation
+# 2. Data generation
 
 ```sh
 seqtk sample -s 100 read1.fq 100000 > sub1.fq
 ```
 
-## Introduction
+## 2.1 Introduction
 
-## Methods
+## 2.2 Methods
 
-## Results and discussion
+## 2.3 Results and discussion
 
-# Quality Control
+# 3. Quality Control
 
-## Introduction
+## 3.1 Introduction
 
-## Methods
+## 3.2 Methods
 
-## Results and discussion
+## 3.3 Results and discussion
 
-# Profiling of the community
+# 4. Profiling of the community
 
-## Introduction
+## 4.1 Introduction
 
-## Methods
+## 4.2 Methods
 
-## Results and discussion
+## 4.3 Results and discussion
 
-# Assembly
+# 5 Assembly
 
-# Binning
+# 6 Binning
 
-# References
+# 7 References
 
