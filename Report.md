@@ -106,6 +106,13 @@ Das Assembly wurde mit Quast evaluiert.
 quast -1 read1.fq -2 read2.fq $IN
 ```
 
+Die contig coverage wurde mit bbmap/bbwrap durchgeführt.
+
+```sh
+bbwrap.sh ref=$IN in=read1.fq in2=read2.fq out=aln.sam.gz kfilter=22 subfilter=15 maxindel=80
+pileup.sh in=aln.sam.gz out=cov.txt
+```
+
 ## Results and discussion
 
 
@@ -115,6 +122,18 @@ quast -1 read1.fq -2 read2.fq $IN
 
 ## Methods
 
+Das Binning erfolgte mit MaxBin2 und MetaBAT.
+
+```sh
+run_MaxBin.pl -contig $IN -out $OUT -reads read1.fq -reads2 read2.fq -thread 8 -markerset 40
+metabat -i $IN -a depth.txt -o $OUT -v --saveTNF saved.tnf --saveDistance saved.dist
+```
+
+Mit Checkm wurden die Ergebnisse evaluiert.
+
+```sh
+checkm lineage_wf -t 20 -x fa $IN $OUT > checkm_summary.txt
+```
 
 ## Results and discussion
 
