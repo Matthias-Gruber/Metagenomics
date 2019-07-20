@@ -73,3 +73,5 @@ ktImportTaxonomy $OUT.taxonomy.filtered.taxids.txt -o $OUT.taxonomy.filtered.kro
 
 # References
 
+Breitwieser, F. P., Lu, J., & Salzberg, S. L. (2017). A review of methods and databases for metagenomic classification and assembly. Briefings in Bioinformatics, (June), 1–15. https://doi.org/10.1093/bib/bbx120
+
