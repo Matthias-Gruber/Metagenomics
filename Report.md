@@ -30,6 +30,8 @@ Das Abundance File enthält 2 Spalten - in der ersten den Sequence Identifier un
 
 ## Introduction
 
+Im nächsten Schritt wird die Qualität der Reads mit dem Tool FastQC (https://github.com/s-andrews/FastQC) überprüft und anschließend mit dem Tool bbduk (https://github.com/BioInfoTools/BBMap) ein Quality Trimming durchgeführt.
+
 ## Methods
 
 Mit FastQC wurde die Qualität beurteilt.
@@ -46,9 +48,21 @@ bbduk.sh in1=$IN in2=$IN2 out1=$IN.bbduk.fq out2=$IN2.bbduk.fq qtrim=r trimq=10 
 
 ## Results and discussion
 
+Da die Qualität der Reads am 3' Ende abnimmt wurden sämtliche Reads mit einer Quality < 10 entfernt.
+Ebenso wurden nur Reads berücksichtigt mit einer Mindestlänge von 100 Basen.
+
 # Profiling of the community
 
 ## Introduction
+
+In diesem Abschnitt wurden einige Tools herangezogen um ein taxonomisches Profiling des Datensatzes durchzuführen.
+Folgende Tools wurden verwendet:
+    * Krakenuniq - https://github.com/fbreitwieser/krakenuniq
+    * Metaxa2    - https://microbiology.se/software/metaxa2/
+    * Motus      - https://motu-tool.org/
+    * Metaphlan  - http://huttenhower.sph.harvard.edu/metaphlan
+Visualisierung der Ergebnisse:
+    * Krona      - https://github.com/marbl/Krona/wiki
 
 ## Methods
 
