@@ -111,16 +111,15 @@ ktImportText -o $OUT.krona.html metaphlan_krona.out
 Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 
 * Krakenuniq
+<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Kraken.PNG" title="Kraken">
 
 * Metaxa
 <img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaxa.png" title="Metaxa">
 
--------------------------
+* Motus
 
 * Metaphlan
 <img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaphlan.png" title="Metaphlan">
-
--------------------------
 
 # Assembly
 
