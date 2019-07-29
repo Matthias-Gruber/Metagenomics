@@ -57,12 +57,12 @@ Ebenso wurden nur Reads berücksichtigt mit einer Mindestlänge von 100 Basen.
 
 In diesem Abschnitt wurden einige Tools herangezogen um ein taxonomisches Profiling des Datensatzes durchzuführen.
 Folgende Tools wurden verwendet:
-    * Krakenuniq - https://github.com/fbreitwieser/krakenuniq
-    * Metaxa2    - https://microbiology.se/software/metaxa2/
-    * Motus      - https://motu-tool.org/
-    * Metaphlan  - http://huttenhower.sph.harvard.edu/metaphlan
+* Krakenuniq - https://github.com/fbreitwieser/krakenuniq
+* Metaxa2    - https://microbiology.se/software/metaxa2/
+* Motus      - https://motu-tool.org/
+* Metaphlan  - http://huttenhower.sph.harvard.edu/metaphlan
 Visualisierung der Ergebnisse:
-    * Krona      - https://github.com/marbl/Krona/wiki
+* Krona      - https://github.com/marbl/Krona/wiki
 
 ## Methods
 
