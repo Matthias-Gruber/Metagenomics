@@ -61,6 +61,7 @@ Folgende Tools wurden verwendet:
 * Metaxa2    - https://microbiology.se/software/metaxa2/
 * Motus      - https://motu-tool.org/
 * Metaphlan  - http://huttenhower.sph.harvard.edu/metaphlan
+
 Visualisierung der Ergebnisse:
 * Krona      - https://github.com/marbl/Krona/wiki
 
