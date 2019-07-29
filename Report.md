@@ -109,6 +109,16 @@ ktImportText -o $OUT.krona.html metaphlan_krona.out
 
 ## Results and discussion
 
+<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaphlan.png" title="Metaphlan">
+<figcaption> Metaphlan: </figcaption>
+
+-------------------------
+
+<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaxa.png" title="Metaxa">
+<figcaption> Metaxa: </figcaption>
+
+-------------------------
+
 # Assembly
 
 ## Introduction
