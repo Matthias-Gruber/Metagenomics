@@ -117,7 +117,7 @@ Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 <img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaxa.png" title="Metaxa">
 
 * Motus
-
+<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Motus.PNG" title="Motus">
 * Metaphlan
 <img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaphlan.png" title="Metaphlan">
 
