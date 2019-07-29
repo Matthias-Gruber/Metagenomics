@@ -11,6 +11,8 @@
 
 ## Introduction
 
+Im ersten Schritt werden mit dem Sequencing Simulator Tool iss (InSilicoSeq - https://github.com/HadrienG/InSilicoSeq) die benötigten paired-end Illumina MySeq Reads erzeugt. 
+
 ## Methods
 
 Mit dem folgenden Befehl wurden 2 000 000 MiSeq reads von 2 bakteriellen und 1 Archae Genom - von RefSeq zufällig ausgewählt - simuliert.
@@ -20,6 +22,9 @@ iss generate --ncbi bacteria archaea --n_genomes_ncbi 2 1 --n_reads 2000000 --mo
 ```
 
 ## Results and discussion
+
+Die 2.000.000 Reads wurden in einem .fasta File und die zugehörige Abundance in einem .txt File gespeichert.
+Das Abundance File enthält 2 Spalten - in der ersten den Sequence Identifier und in der zweiten die Abundance.
 
 # Quality Control
 
