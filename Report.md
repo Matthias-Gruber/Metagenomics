@@ -184,5 +184,5 @@ checkm lineage_wf -t 20 -x fa $IN $OUT > checkm_summary.txt
 
 Breitwieser, F. P., Lu, J., & Salzberg, S. L. (2017). A review of methods and databases for metagenomic classification and assembly. Briefings in Bioinformatics, (June), 1–15. https://doi.org/10.1093/bib/bbx120
 
-Brader, G. (2019). Metagenomik ILV
+Brader, G., Turaev, D. (2019). Metagenomik ILV
 
