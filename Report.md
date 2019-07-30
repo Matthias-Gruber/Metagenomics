@@ -122,9 +122,11 @@ Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 
 ## 5.1 Introduction
 
+Genome assembly ist eine Herausforderung für einzelne Genome. Für ein Sample mit verschiedenen Spezies ist das noch komplizierter. Das wahrscheinlich größte Problem ist die ungleiche sequencing depth der verschiedenen Organismen in einer metagenomischen Probe. Standard assemblers nehmen an, dass die depth of coverage annähernd gleich über das gesamte Genom ist. Mögliche Tools dafür sind Megahit, SPAdes, MetaSPAdes und MetAMOS.
+
 ## 5.2 Methods
 
-Das Metagenom wurde mit dem Megahit assembler durchgeführt.
+Das Metagenom wurde mit dem Tool Megahit assembled.
 
 ```sh
 megahit -1 read1.fq -2 read2.fq -o megahit_out
