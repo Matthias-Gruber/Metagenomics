@@ -4,9 +4,9 @@
 
 # 1. General Introduction
 
-Metagenomik ist ein Forschungsgebiet, das mit molekularbiologischen Methoden die Gesamtheit der Mikroorganismen eines Biotops erfasst. Dabei wird nicht nur die gesamte genomische Information der Mikroorganismen eines Lebensraumes untersucht, sondern auch die Umwelt-DNA dieses Lebensraumes zum Zeitpunkt der Untersuchung. Dies ist wichtig, um auch die metabolischen und enzymatischen Aktivitäten in einer Probe (z.B. einer Darmprobe oder ein Moospolster) zu verstehen. Das Verständnis der Abläufe der Vorgänge kann für medizinische oder technische Amplifikationen hilfreich sein. 
+Metagenomik ist ein Forschungsgebiet, das mit molekularbiologischen Methoden die Gesamtheit der Mikroorganismen eines Biotops erfasst. Dabei wird nicht nur die gesamte genomische Information der Mikroorganismen eines Lebensraumes untersucht, sondern auch die Umwelt-DNA dieses Lebensraumes zum Zeitpunkt der Untersuchung. Dies ist wichtig, um auch die metabolischen und enzymatischen Aktivitäten in einer Probe (z.B. einer Darmprobe oder ein Moospolster) zu verstehen. Das Verständnis der Abläufe der Vorgänge kann für medizinische oder technische Amplifikationen hilfreich sein (Brader et al. 2019). 
 
-Eine der größten Motivationen Metagenomik zu betreiben, ist die Tatsache, dass 99 % aller Mikroorganismen nicht oder nur sehr schwer kultivierbar sind. Mithife metagenomischer Methoden ist es möglich Mikroorganismen zu identifizieren, auch wenn sie nicht kultivierbar sind.
+Eine der größten Motivationen Metagenomik zu betreiben, ist die Tatsache, dass 99 % aller Mikroorganismen nicht oder nur sehr schwer kultivierbar sind. Mithife metagenomischer Methoden ist es möglich Mikroorganismen zu identifizieren, auch wenn sie nicht kultivierbar sind (Brader et al. 2019).
 
 Derzeit gibt es jedoch noch Limitierungen in der Metagenomik. Zum Beispiel werden Archaeen bei metagenomischen Untersuchungen leider oft übersehen. Der Grund dafür sind die Primer, die für metagenomische Analysen verwendet werden. Diese funktionieren nur bei einer kleinen Gruppe von Archaeen. Auch bei grampositiven und gramnegativen Bakterien gibt es hier Einschränkungen (Brader et al. 2019).
 
@@ -91,7 +91,7 @@ metaxa2 -1 read1.fq -2 read2.fq -g ssu --mode metagenome --plus T --cpu 8 --mega
 
 ###  Motus
 
-Das Profiling basierend auf universal single-copy marker genes erfolgte mit motus.
+Das Profiling basierend auf universal single-copy marker genes erfolgte mit Motus.
 
 ```sh
 motus profile -f read1.fq -r read2.fq -t 30 > $OUT
