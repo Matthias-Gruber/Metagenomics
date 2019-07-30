@@ -133,7 +133,7 @@ Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 
 ## 5.1 Introduction
 
-Genome assembly ist eine Herausforderung für einzelne Genome. Für ein Sample mit verschiedenen Spezies ist das noch komplizierter. Das wahrscheinlich größte Problem ist die ungleiche sequencing depth der verschiedenen Organismen in einer metagenomischen Probe. Standard assemblers nehmen an, dass die depth of coverage annähernd gleich über das gesamte Genom ist. Mögliche Tools dafür sind Megahit, SPAdes, MetaSPAdes und MetAMOS (Salzberg, 2017).
+Genome assembly ist eine Herausforderung für einzelne Genome. Für ein Sample mit verschiedenen Spezies ist das noch komplizierter. Das wahrscheinlich größte Problem ist die ungleiche sequencing depth der verschiedenen Organismen in einer metagenomischen Probe. Standard assemblers nehmen an, dass die depth of coverage annähernd gleich über das gesamte Genom ist. Mögliche Tools dafür sind Megahit, SPAdes, MetaSPAdes und MetAMOS (Breitwieser et al. 2017).
 
 ## 5.2 Methods
 
@@ -162,7 +162,7 @@ pileup.sh in=aln.sam.gz out=cov.txt
 
 ## 6.1 Introduction
 
-Binning ist der Prozess in dem reads oder contigs gruppiert werden und diese zu operational taxonomic units assigned werden. Mögliche Tools sind Maxbin, CONCOCT, COCACOLA, MetaBAT und MetaCluster (Salzberg, 2017).
+Binning ist der Prozess in dem reads oder contigs gruppiert werden und diese zu operational taxonomic units assigned werden. Mögliche Tools sind Maxbin, CONCOCT, COCACOLA, MetaBAT und MetaCluster (Breitwieser et al. 2017).
 
 ## 6.2 Methods
 
@@ -180,6 +180,8 @@ checkm lineage_wf -t 20 -x fa $IN $OUT > checkm_summary.txt
 ```
 
 ## 6.3 Results and discussion
+
+Wie in checkm_summary.txt ersichtlich beträgt die completeness über 90 % (außer bei bin.4: k__Bacteria (UID203)) und die contamination weniger als 1 %. Die strain heterogeneity beträgt 0 % (außer bei bin.2: g__Mycobacterium (UID1816)).
 
 # 7 References
 
