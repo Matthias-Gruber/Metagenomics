@@ -5,8 +5,11 @@
 # 1. General Introduction
 
 Metagenomik ist ein Forschungsgebiet, das mit molekularbiologischen Methoden die Gesamtheit der Mikroorganismen eines Biotops erfasst. Dabei wird nicht nur die gesamte genomische Information der Mikroorganismen eines Lebensraumes untersucht, sondern auch die Umwelt-DNA dieses Lebensraumes zum Zeitpunkt der Untersuchung. Dies ist wichtig, um auch die metabolischen und enzymatischen Aktivitäten in einer Probe (z.B. einer Darmprobe oder ein Moospolster) zu verstehen. Das Verständnis der Abläufe der Vorgänge kann für medizinische oder technische Amplifikationen hilfreich sein. 
+
 Eine der größten Motivationen Metagenomik zu betreiben, ist die Tatsache, dass 99 % aller Mikroorganismen nicht oder nur sehr schwer kultivierbar sind. Mithife metagenomischer Methoden ist es möglich Mikroorganismen zu identifizieren, auch wenn sie nicht kultivierbar sind.
+
 Derzeit gibt es jedoch noch Limitierungen in der Metagenomik. Zum Beispiel werden Archaeen bei metagenomischen Untersuchungen leider oft übersehen. Der Grund dafür sind die Primer, die für metagenomische Analysen verwendet werden. Diese funktionieren nur bei einer kleinen Gruppe von Archaeen. Auch bei grampositiven und gramnegativen Bakterien gibt es hier Einschränkungen (Brader et al. 2019).
+
 Auch die großen Datenmengen, die bei üblichen Sequenziermethoden, wie z.B. Illumina entstehen und die dadurch immer größer werdenden Datenbanken, sind eine Herausforderung für die Forscher. Inzwischen wurden eine Vielzahl von Algorithmen und rechnerischen Tools entwickelt, die bei der Analyse von Metagenom-Daten unterstützen. Zwei der heute gängigsten Methoden das Mikrobiom zu analysieren, sind Klassifizierungsmethoden und Assembly-Methoden. Bei ersteren wird das Gemisch von Spezies in einer Probe, entweder mithilfe von Markergenen zur Abschätzung ihrer Häufigkeit oder durch taxonomische Zuordnung einzelner Reads bestimmt. Bei Assembly-Methoden werden die Reads der gleichen Spezies zu größeren Contigs assembliert, wodurch taxonomische Zuordnung erfolgen kann. Jedoch sind Inkonsistenzen in der mikrobiellen Taxonomie oder Fehler im Genmodell ebenso große Herausforderungen, weil dies die meisten Methoden nicht berücksichtigen (Breitwieser et al. 2017).
 
 
