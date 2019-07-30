@@ -5,15 +5,15 @@
 
 # Abstract
 
-# Introduction
+# 1. General Introduction
 
-# Data generation
+# 2. Data generation
 
-## Introduction
+## 2.1 Introduction
 
 Im ersten Schritt werden mit dem Sequencing Simulator Tool iss (InSilicoSeq - https://github.com/HadrienG/InSilicoSeq) die benötigten paired-end Illumina MySeq Reads erzeugt. 
 
-## Methods
+## 2.2 Methods
 
 Mit dem folgenden Befehl wurden 2 000 000 MiSeq reads von 2 bakteriellen und 1 Archae Genom - von RefSeq zufällig ausgewählt - simuliert.
 
@@ -21,18 +21,18 @@ Mit dem folgenden Befehl wurden 2 000 000 MiSeq reads von 2 bakteriellen und 1 A
 iss generate --ncbi bacteria archaea --n_genomes_ncbi 2 1 --n_reads 2000000 --model MiSeq --output ncbi_lc --cpus 8
 ```
 
-## Results and discussion
+## 2.3 Results and discussion
 
 Die 2.000.000 Reads wurden in einem .fasta File und die zugehörige Abundance in einem .txt File gespeichert.
 Das Abundance File enthält 2 Spalten - in der ersten den Sequence Identifier und in der zweiten die Abundance.
 
-# Quality Control
+# 3. Quality Contro
 
-## Introduction
+## 3.1 Introduction
 
 Im nächsten Schritt wird die Qualität der Reads mit dem Tool FastQC (https://github.com/s-andrews/FastQC) überprüft und anschließend mit dem Tool bbduk (https://github.com/BioInfoTools/BBMap) ein Quality Trimming durchgeführt.
 
-## Methods
+## 3.2 Methods
 
 Mit FastQC wurde die Qualität beurteilt.
 
@@ -46,14 +46,14 @@ Das Quality Trimming erfolgte mit bbduk.
 bbduk.sh in1=$IN in2=$IN2 out1=$IN.bbduk.fq out2=$IN2.bbduk.fq qtrim=r trimq=10 maq=10 minlen=100
 ```
 
-## Results and discussion
+## 3.3 Results and discussion
 
 Da die Qualität der Reads am 3' Ende abnimmt wurden sämtliche Reads mit einer Quality < 10 entfernt.
 Ebenso wurden nur Reads berücksichtigt mit einer Mindestlänge von 100 Basen.
 
-# Profiling of the community
+# 4. Profiling of the community
 
-## Introduction
+## 4.1 Introduction
 
 In diesem Abschnitt wurden einige Tools herangezogen um ein taxonomisches Profiling des Datensatzes durchzuführen.
 Folgende Tools wurden verwendet:
@@ -65,7 +65,7 @@ Folgende Tools wurden verwendet:
 Visualisierung der Ergebnisse:
 * Krona      - https://github.com/marbl/Krona/wiki
 
-## Methods
+## 4.2 Methods
 
 ### Krakenuniq
 
@@ -107,7 +107,7 @@ Die Darstellung der Ergebnisse erfolgte mit Krona.
 ktImportText -o $OUT.krona.html metaphlan_krona.out
 ```
 
-## Results and discussion
+## 4.3 Results and discussion
 Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 
 * Krakenuniq
@@ -121,11 +121,11 @@ Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 * Metaphlan
 <img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Metaphlan.png" title="Metaphlan">
 
-# Assembly
+# 5 Assembly
 
-## Introduction
+## 5.1 Introduction
 
-## Methods
+## 5.2 Methods
 
 Das Metagenom wurde mit dem Megahit assembler durchgeführt.
 
@@ -145,14 +145,14 @@ bbwrap.sh ref=$IN in=read1.fq in2=read2.fq out=aln.sam.gz kfilter=22 subfilter=1
 pileup.sh in=aln.sam.gz out=cov.txt
 ```
 
-## Results and discussion
+## 5.3 Results and discussion
 
 
-# Binning
+# 6 Binning
 
-## Introduction
+## 6.1 Introduction
 
-## Methods
+## 6.2 Methods
 
 Das Binning erfolgte mit MaxBin2 und MetaBAT.
 
@@ -167,9 +167,9 @@ Mit Checkm wurden die Ergebnisse evaluiert.
 checkm lineage_wf -t 20 -x fa $IN $OUT > checkm_summary.txt
 ```
 
-## Results and discussion
+## 6.3 Results and discussion
 
-# References
+# 7 References
 
 Breitwieser, F. P., Lu, J., & Salzberg, S. L. (2017). A review of methods and databases for metagenomic classification and assembly. Briefings in Bioinformatics, (June), 1–15. https://doi.org/10.1093/bib/bbx120
 
