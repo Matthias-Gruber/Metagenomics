@@ -1,6 +1,7 @@
 # Metagenomik
 
-# Abstract
+# Graphical Abstract
+<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/flowchart_abstract.png">
 
 # 1. General Introduction
 
