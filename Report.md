@@ -149,7 +149,7 @@ pileup.sh in=aln.sam.gz out=cov.txt
 
 ## 6.1 Introduction
 
-Binning ist der Prozess in dem reads oder contigs gruppiert werden und diese zu operational taxonomic units assigned werden. Mögliche Tools sind Maxbin, CONCOCT, COCACOLA, MetaBAT und MetaCluster.
+Binning ist der Prozess in dem reads oder contigs gruppiert werden und diese zu operational taxonomic units assigned werden. Mögliche Tools sind Maxbin, CONCOCT, COCACOLA, MetaBAT und MetaCluster (Salzberg, 2017).
 
 ## 6.2 Methods
 
