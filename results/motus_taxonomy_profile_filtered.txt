@@ -1,0 +1,7 @@
+# git tag version 2.1.1 |  motus version 2.1.1 | map_tax 2.1.1 | gene database: nr2.1.1 | calc_mgc 2.1.1 -y insert.scaled_counts -l 75 | calc_motu 2.1.1 -k mOTU -C no_CAMI -g 3 | taxonomy: ref_mOTU_2.1.1 meta_mOTU_2.1.1
+# call: python /apps/anaconda3/envs/omics/bin/../share/motus-2.1.1//motus profile -f read1.fq -r read2.fq -t 30
+#consensus_taxonomy	unnamed sample
+#consensus_taxonomy	unnamed sample
+Mycobacterium avium [ref_mOTU_v2_0103]	0.0603617554
+Methanosarcina mazei/soligelidi [ref_mOTU_v2_0156]	0.5534609505
+Klebsiella sp. [ref_mOTU_v2_0160]	0.3861772941
