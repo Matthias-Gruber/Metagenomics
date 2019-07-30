@@ -1,8 +1,5 @@
 # Metagenomik
 
-<img src="https://github.com/fhwnmatt/Metagenomics/blob/master/figures/Abundance.png" title="Abundance">
-<figcaption> Abundance </figcaption>
-
 # Abstract
 
 # 1. General Introduction
@@ -26,7 +23,7 @@ iss generate --ncbi bacteria archaea --n_genomes_ncbi 2 1 --n_reads 2000000 --mo
 Die 2.000.000 Reads wurden in einem .fasta File und die zugehörige Abundance in einem .txt File gespeichert.
 Das Abundance File enthält 2 Spalten - in der ersten den Sequence Identifier und in der zweiten die Abundance.
 
-# 3. Quality Contro
+# 3. Quality Control
 
 ## 3.1 Introduction
 
@@ -151,6 +148,8 @@ pileup.sh in=aln.sam.gz out=cov.txt
 # 6 Binning
 
 ## 6.1 Introduction
+
+Binning ist der Prozess ind dem reads oder contigs gruppiert werden und diese zu operational taxonomic units assigned werden.
 
 ## 6.2 Methods
 
