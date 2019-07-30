@@ -157,6 +157,7 @@ pileup.sh in=aln.sam.gz out=cov.txt
 
 ## 5.3 Results and discussion
 
+In der Datei assembly_stats.filtered.txt sind die Spalten #ID, Avg_fold, Length und	Read_GC angeführt.
 
 # 6 Binning
 
