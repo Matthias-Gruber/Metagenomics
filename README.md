@@ -10,3 +10,4 @@ Die folgenden Skripten laufen fehlerfrei auf dem BioDataScience Server.
 * 04_binning.sh
 
 Die Datei Report.md enthält den kompletten Bericht. Der Ordner figures enthält alle eingebundenen Abbildungen.
+Der Ordner results enthält einige Ergebnisse wie die Tabelle checkm_summary.txt oder den Quast Report.
