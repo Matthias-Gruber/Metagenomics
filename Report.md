@@ -86,7 +86,14 @@ Ebenso wurden nur Reads berücksichtigt mit einer Mindestlänge von 100 Basen.
 
 ## 4.1 Introduction
 
-In diesem Abschnitt wurden einige Tools herangezogen um ein taxonomisches Profiling des Datensatzes durchzuführen.
+Ziel dieses Schritts war es aufzuzeigen, welche Organismen sich in der Probe (der simulierten Daten) befinden. Dazu wurden die Read-Sequenzen mit den Sequenzen der Datenbanken verglichen um Ähnlichkeiten vom gleichen Organismus oder ähnlichen Organismen zu finden.
+
+Universell für alle Spezies können hier entweder conserved taxonomic Markers, wie z.B. 16S rRNA verwendet werden oder single copy universal conserved taxonomic Proteins, auch Housekeeping-Genes genannt. 
+Ein anderer Ansatz Sequenzen zu vergleichen, sind clade spezific Markers, die die Reads zu Gruppen von Organismen zuordnen, z.B. stickstofffixierende Organismen.
+
+Limitierung bei diesem Schritt wäre, wenn die Sequenz des Genoms (noch) nicht in der Datenbank vorhanden ist.
+
+Es wurden einige Tools herangezogen um ein taxonomisches Profiling des Datensatzes durchzuführen.
 Folgende Tools wurden verwendet:
 * Krakenuniq - https://github.com/fbreitwieser/krakenuniq
 * Metaxa2    - https://microbiology.se/software/metaxa2/
