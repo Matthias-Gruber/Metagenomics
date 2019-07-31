@@ -48,9 +48,15 @@ In Anbetracht dessen kann bei 3 Genomen, die in dieser Analyse verwendet wurden,
 
 ## 3.1 Introduction
 
-Im nächsten Schritt wird die Qualität der Reads mit dem Tool FastQC (https://github.com/s-andrews/FastQC) überprüft und anschließend mit dem Tool bbduk (https://github.com/BioInfoTools/BBMap) ein Quality Trimming durchgeführt.
+Um die Qualität der Reads zu kontrollieren, wurden die generierten .html Files im Browser begutachtet. Kontaminationen der Reads, wie zum Beispiel die Adaptersequenzen, die bei der Illumina-Sequenzierung angehängt werden, wurden mit dem Trimming entfernt, damit die Simulation nicht gestört wird.
+Auch zu kurze Reads und Reads mit schlechter Qualität wurden entfernt.
+ 
+Zusätzlich wurden statistische Methoden angewandt, um Informationen wie Anzahl der Reads, Anzahl der Sequenzen, durchschnittliche, minimale und maximale Readlänge usw. zu erhalten.
+
 
 ## 3.2 Methods
+
+Die Qualität der Reads wurde mit dem Tool FastQC (https://github.com/s-andrews/FastQC) überprüft und anschließend wurde mit dem Tool bbduk (https://github.com/BioInfoTools/BBMap) ein Quality Trimming durchgeführt.
 
 Mit FastQC wurde die Qualität beurteilt.
 
@@ -62,6 +68,13 @@ Das Quality Trimming erfolgte mit bbduk.
 
 ```sh
 bbduk.sh in1=$IN in2=$IN2 out1=$IN.bbduk.fq out2=$IN2.bbduk.fq qtrim=r trimq=10 maq=10 minlen=100
+```
+
+Die statistischen Informationen wurden mit seqstats aufgelistet.
+
+```sh
+seqstats $IN.bbduk.fq
+seqstats $IN2.bbduk.fq
 ```
 
 ## 3.3 Results and discussion
