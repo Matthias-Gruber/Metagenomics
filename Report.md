@@ -41,6 +41,7 @@ Die 2.000.000 Reads wurden in einem .fasta File und die zugehörige Abundance in
 Das Abundance File enthält 2 Spalten - in der ersten den Sequence Identifier und in der zweiten die Abundance.
 
 In real-life Proben, z.B. in 1 mg Bodenprobe sind mehr als 1000 Mikroorganismen enthalten. Wenn davon ausgegangen wird, dass das Genom eines Bakteriums eine durchschnittliche Größe von 6 Millionen Basenpaare hat und bei der Sequenzierung eine Coverage von 100 erzielt wird, dann wären bei einer Readlänge von ca. 300 bp 2 Milliarden Reads das Resultat.
+
 In Anbetracht dessen kann bei 3 Genomen, die in dieser Analyse verwendet wurden, nicht von Komplexität gesprochen werden.
 
 # 3. Quality Control
