@@ -40,6 +40,10 @@ iss generate --ncbi bacteria archaea --n_genomes_ncbi 2 1 --n_reads 2000000 --mo
 Die 2.000.000 Reads wurden in einem .fasta File und die zugehörige Abundance in einem .txt File gespeichert.
 Das Abundance File enthält 2 Spalten - in der ersten den Sequence Identifier und in der zweiten die Abundance.
 
+Wenn davon ausgegangen wird, dass das Genom eines Bakteriums eine durchschnittliche Größe von 6 Millionen Basenpaare hat und bei der Sequenzierung eine Coverage von 100 erzielt wird, dann wären bei 3 Bakteriengenomen bei einer Readlänge von ca. 300 bp dreimal soviele Reads das Resultat.
+
+In real-life Proben, z.B. in 1 g Bodenprobe sind mehr als 1 Million Mikroorganismen enthalten. In Anbetracht dessen kann bei 3 Genomen, die in dieser Analyse verwendet wurden, nicht von Komplexität gesprochen werden.
+
 # 3. Quality Control
 
 ## 3.1 Introduction
