@@ -7,11 +7,11 @@
 
 Metagenomik ist ein Forschungsgebiet, das mit molekularbiologischen Methoden die Gesamtheit der Mikroorganismen eines Biotops erfasst. Dabei wird nicht nur die gesamte genomische Information der Mikroorganismen eines Lebensraumes untersucht, sondern auch die Umwelt-DNA dieses Lebensraumes zum Zeitpunkt der Untersuchung. Dies ist wichtig, um auch die metabolischen und enzymatischen Aktivitäten in einer Probe (z.B. einer Darmprobe oder ein Moospolster) zu verstehen. Das Verständnis der Abläufe der Vorgänge kann für medizinische oder technische Amplifikationen hilfreich sein (Brader et al. 2019). 
 
-Eine der größten Motivationen Metagenomik zu betreiben, ist die Tatsache, dass 99 % aller Mikroorganismen nicht oder nur sehr schwer kultivierbar sind. Mithife metagenomischer Methoden ist es möglich Mikroorganismen zu identifizieren, auch wenn sie nicht kultivierbar sind (Brader et al. 2019).
+Eine der größten Motivationen Metagenomik zu betreiben, ist die Tatsache, dass 99 % aller Mikroorganismen nicht oder nur sehr schwer kultivierbar sind. Mithilfe metagenomischer Methoden ist es möglich Mikroorganismen zu identifizieren, auch wenn sie nicht kultivierbar sind (Brader et al. 2019).
 
 Derzeit gibt es jedoch noch Limitierungen in der Metagenomik. Zum Beispiel werden Archaeen bei metagenomischen Untersuchungen leider oft übersehen. Der Grund dafür sind die Primer, die für metagenomische Analysen verwendet werden. Diese funktionieren nur bei einer kleinen Gruppe von Archaeen. Auch bei grampositiven und gramnegativen Bakterien gibt es hier Einschränkungen (Brader et al. 2019).
 
-Die großen Datenmengen, die bei üblichen Sequenziermethoden, wie z.B. Illumina entstehen und die dadurch immer größer werdenden Datenbanken, sind eine Herausforderung für die Forscher. Inzwischen wurden eine Vielzahl von Algorithmen und rechnerischen Tools entwickelt, die bei der Analyse von Metagenom-Daten unterstützen. Zwei der heute gängigsten Methoden das Mikrobiom zu analysieren, sind Klassifizierungsmethoden und Assembly-Methoden. Bei ersteren wird das Gemisch von Spezies in einer Probe, entweder mithilfe von Markergenen zur Abschätzung ihrer Häufigkeit oder durch taxonomische Zuordnung einzelner Reads bestimmt. Bei Assembly-Methoden werden die Reads der gleichen Spezies zu größeren Contigs assembliert, wodurch taxonomische Zuordnung erfolgen kann. Jedoch sind Inkonsistenzen in der mikrobiellen Taxonomie oder Fehler im Genmodell ebenso große Herausforderungen, weil dies die meisten Methoden nicht berücksichtigen (Breitwieser et al. 2017).
+Die großen Datenmengen, die bei üblichen Sequenziermethoden, wie z.B. Illumina entstehen und die dadurch immer größer werdenden Datenbanken, sind eine Herausforderung für die Forscher. Inzwischen wurden eine Vielzahl von Algorithmen und rechnerischen Tools entwickelt, die die Analyse von Metagenom-Daten unterstützen. Zwei der heute gängigsten Methoden das Mikrobiom zu analysieren, sind Klassifizierungsmethoden und Assembly-Methoden. Bei ersteren wird das Gemisch von Spezies in einer Probe, entweder mithilfe von Markergenen zur Abschätzung ihrer Häufigkeit oder durch taxonomische Zuordnung einzelner Reads bestimmt. Bei Assembly-Methoden werden die Reads der gleichen Spezies zu größeren Contigs assembliert, wodurch taxonomische Zuordnung erfolgen kann. Jedoch sind Inkonsistenzen in der mikrobiellen Taxonomie oder Fehler im Genmodell ebenso große Herausforderungen, weil dies die meisten Methoden nicht berücksichtigen (Breitwieser et al. 2017).
 
 
 # 2. Data generation
@@ -20,7 +20,7 @@ Die großen Datenmengen, die bei üblichen Sequenziermethoden, wie z.B. Illumina
 
 Für Metagenom-Analysen wie diese, sind Reads einer Sequenzierung nötig. Da das Tool InSilicoSeq realistische Illumina-Reads erzeugen kann, wurden simulierte Daten verwendet, um die Analyse effizient durchzuführen zu können.
  
-Ein großer Vorteil bei simulierten Daten, ist die Tatsache, dass sie kostenlos erzeugt werden können und so eine teure Sequenzierung vermieden werden kann. Ebenso ein Vorteil gegenüber real-life Daten ist die Zeitersparnis. Eine weitere Motivation simulierte Daten zu verwenden, wäre experimentelles Design, neue Projekte zu entwerfen und auch zur Beurteilung und Validierung eines biologischen Modells.
+Ein großer Vorteil bei simulierten Daten ist die Tatsache, dass sie kostenlos erzeugt werden können und so eine teure Sequenzierung vermieden werden kann. Ebenso ein Vorteil gegenüber real-life Daten ist die Zeitersparnis. Eine weitere Motivation simulierte Daten zu verwenden, wäre experimentelles Design, neue Projekte zu entwerfen und auch zur Beurteilung und Validierung eines biologischen Modells.
 
 InSilicoSeq bietet drei Modelle um Reads zu erzeugen: MiSeq, HiSeq und NovaSeq. Weitere Tools um simulierte Reads zu erzeugen sind EAGLE, pIRS, ReadSim oder SimSeq.
 
@@ -83,7 +83,7 @@ Visualisierung der Ergebnisse:
 
 ### Krakenuniq
 
-Das Profiling basierend auf der  whole genome sequence erfolgte mit Krakenuniq.
+Das Profiling basierend auf der whole genome sequence erfolgte mit Krakenuniq.
 
 ```sh
 krakenuniq --db $DBDIR --threads 10 --report-file kraken_taxonomy_profile.txt --paired read1.fq read2.fq  > kraken_read_classification.tsv
@@ -140,7 +140,7 @@ Die Ergebnisse der einzelnen Tools sind nachfolgend angeführt:
 
 ## 5.1 Introduction
 
-Genome assembly ist eine Herausforderung für einzelne Genome. Für ein Sample mit verschiedenen Spezies ist das noch komplizierter. Das wahrscheinlich größte Problem ist die ungleiche sequencing depth der verschiedenen Organismen in einer metagenomischen Probe. Standard assemblers nehmen an, dass die depth of coverage annähernd gleich über das gesamte Genom ist. Mögliche Tools dafür sind Megahit, SPAdes, MetaSPAdes und MetAMOS (Breitwieser et al. 2017).
+Genome assembly ist eine Herausforderung für einzelne Genome. Für ein Sample mit verschiedenen Spezies ist das noch komplizierter. Das wahrscheinlich größte Problem ist die ungleiche sequencing Depth der verschiedenen Organismen in einer metagenomischen Probe. Standard Assemblers nehmen an, dass die Depth of Coverage annähernd gleich über das gesamte Genom ist. Mögliche Tools dafür sind Megahit, SPAdes, MetaSPAdes und MetAMOS (Breitwieser et al. 2017).
 
 ## 5.2 Methods
 
@@ -155,7 +155,7 @@ Das Assembly wurde mit Quast evaluiert.
 quast -1 read1.fq -2 read2.fq $IN
 ```
 
-Die contig coverage wurde mit bbmap/bbwrap durchgeführt.
+Die Contig Coverage wurde mit bbmap/bbwrap durchgeführt.
 
 ```sh
 bbwrap.sh ref=$IN in=read1.fq in2=read2.fq out=aln.sam.gz kfilter=22 subfilter=15 maxindel=80
@@ -170,7 +170,7 @@ In der Datei assembly_stats.filtered.txt sind die Spalten #ID, Avg_fold, Length 
 
 ## 6.1 Introduction
 
-Binning ist der Prozess in dem reads oder contigs gruppiert werden und diese zu operational taxonomic units assigned werden. Mögliche Tools sind Maxbin, CONCOCT, COCACOLA, MetaBAT und MetaCluster (Breitwieser et al. 2017).
+Binning ist der Prozess in dem Reads oder Contigs gruppiert werden und diese zu Operational Taxonomic Units (OTUs) assigned werden. Mögliche Tools sind Maxbin, CONCOCT, COCACOLA, MetaBAT und MetaCluster (Breitwieser et al. 2017).
 
 ## 6.2 Methods
 
@@ -189,7 +189,7 @@ checkm lineage_wf -t 20 -x fa $IN $OUT > checkm_summary.txt
 
 ## 6.3 Results and discussion
 
-Wie in checkm_summary.txt ersichtlich beträgt die completeness über 90 % (außer bei bin.4: k__Bacteria (UID203)) und die contamination weniger als 1 %. Die strain heterogeneity beträgt 0 % (außer bei bin.2: g__Mycobacterium (UID1816)).
+Wie in checkm_summary.txt ersichtlich beträgt die Completeness über 90 % (außer bei bin.4: k__Bacteria (UID203)) und die Contamination weniger als 1 %. Die strain heterogeneity beträgt 0 % (außer bei bin.2: g__Mycobacterium (UID1816)).
 
 # 7 References
 
