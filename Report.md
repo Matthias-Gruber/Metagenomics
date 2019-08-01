@@ -22,7 +22,7 @@ Für Metagenom-Analysen wie diese, sind Reads einer Sequenzierung nötig. Da das
  
 Ein großer Vorteil bei simulierten Daten ist die Tatsache, dass sie kostenlos erzeugt werden können und so eine teure Sequenzierung vermieden werden kann. Ebenso ein Vorteil gegenüber real-life Daten ist die Zeitersparnis. Eine weitere Motivation simulierte Daten zu verwenden, wäre experimentelles Design, neue Projekte zu entwerfen und auch zur Beurteilung und Validierung eines biologischen Modells.
 
-InSilicoSeq bietet drei Modelle um Reads zu erzeugen: MiSeq, HiSeq und NovaSeq. Weitere Tools um simulierte Reads zu erzeugen sind EAGLE, pIRS, ReadSim oder SimSeq.
+InSilicoSeq bietet drei Modelle um Reads zu erzeugen: MiSeq, HiSeq und NovaSeq. Weitere Tools um simulierte Illumina-Reads für die Metagenom-Analyse zu erzeugen sind MetaSim, BEAR, FASTQSim, GemSim, Grinder, Mason, NeSSM und pIRS (Escalona et al. 2016).
 
 
 ## 2.2 Methods
@@ -220,4 +220,6 @@ Wie in checkm_summary.txt ersichtlich beträgt die Completeness über 90 % (auß
 Breitwieser, F. P., Lu, J., & Salzberg, S. L. (2017). A review of methods and databases for metagenomic classification and assembly. Briefings in Bioinformatics, (June), 1–15. https://doi.org/10.1093/bib/bbx120
 
 Brader, G., Turaev, D. (2019). Metagenomik ILV
+
+Escalona, M., Rocha, S., Posada, D. (2016). A comparison of tools for the simulation od genomic next-generation sequencing data. Nature Reviews Genetics, 20 June 2016 https://doi.org/10.1038/nrg.2016.57
 
